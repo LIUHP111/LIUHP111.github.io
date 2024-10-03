@@ -11,50 +11,35 @@
             <div class="container">
                 <div class="logo">LIUHP</div>
                 <nav>
-                    <ul>
-                        <li><a href="#home">首页</a></li>
-                        <li><a href="#features">功能</a></li>
-                        <li><a href="#cases">案例</a></li>
-                        <li><a href="#reviews">评价</a></li>
-                        <li><a href="#partners">合作伙伴</a></li>
-                        <li><a href="#news">最新动态</a></li>
-                    </ul>
+                    <!-- 删除了所有导航链接 -->
                 </nav>
-                <div class="auth">
-                    <a href="#login" class="btn btn-secondary">登录</a>
-                    <a href="#register" class="btn btn-primary">注册</a>
-                </div>
             </div>
         </header>
 
         <main>
             <section id="banner">
                 <div class="container">
-                    <h1>展示你的才华，成就你的梦想</h1>
+                    <h1>广东轻工职业技术大学</h1>
                     <p>在这里，你可以创造、分享和探索无限可能</p>
-                    <a href="#register" class="btn btn-primary btn-large">开始你的旅程</a>
+                    <a href="#" id="startJourney" class="btn btn-primary btn-large">开始你的旅程</a>
                 </div>
             </section>
 
             <section id="features">
                 <div class="container">
-                    <h2>主要功能与服务</h2>
+                    <h2>个人特质</h2>
                     <div class="feature-grid">
                         <div class="feature-item">
-                            <h3>创意展示</h3>
-                            <p>展示你的作品，吸引潜在客户和合作伙伴</p>
+                            <h3>高度责任心</h3>
+                            <p>我对工作充满热情，始终以高标准要求自己，确保每一项任务都能按时完成并达到预期效果。</p>
                         </div>
                         <div class="feature-item">
-                            <h3>社区互动</h3>
-                            <p>与其他创作者交流，获得反馈和灵感</p>
+                            <h3>细心严谨</h3>
+                            <p>我注重细节，对待工作一丝不苟，能够有效避免错误，保证工作质量。</p>
                         </div>
                         <div class="feature-item">
-                            <h3>项目合作</h3>
-                            <p>找到志同道合的伙伴，共同完成项目</p>
-                        </div>
-                        <div class="feature-item">
-                            <h3>学习成长</h3>
-                            <p>参与在线课程和工作坊，提升技能</p>
+                            <h3>勤奋努力</h3>
+                            <p>我具有强烈的工作意愿和出色的执行力，愿意投入必要的时间和精力去完成任务，即使面对挑战也不轻言放弃。</p>
                         </div>
                     </div>
                 </div>
@@ -62,17 +47,27 @@
 
             <section id="cases">
                 <div class="container">
-                    <h2>成功案例</h2>
+                    <h2>创意展示</h2>
                     <div class="case-grid">
                         <div class="case-item">
-                            <img src="path/to/case1-image.jpg" alt="案例1">
-                            <h3>创意设计工作室</h3>
-                            <p>通过平台找到客户，年收入增长200%</p>
+                            <img src="static/A-立春.jpg" alt="立春创意作品" class="gallery-img">
+                            <h3>立春</h3>
+                            <p>四季系列创意作品</p>
                         </div>
                         <div class="case-item">
-                            <img src="path/to/case2-image.jpg" alt="案例2">
-                            <h3>独立游戏开发者</h3>
-                            <p>在社区中获得反馈，成功发布首款游戏</p>
+                            <img src="static/A-立夏.jpg" alt="立夏创意作品" class="gallery-img">
+                            <h3>立夏</h3>
+                            <p>四季系列创意作品</p>
+                        </div>
+                        <div class="case-item">
+                            <img src="static/A-立秋.jpg" alt="立秋创意作品" class="gallery-img">
+                            <h3>立秋</h3>
+                            <p>四季系列创意作品</p>
+                        </div>
+                        <div class="case-item">
+                            <img src="static/A-立冬.jpg" alt="立冬创意作品" class="gallery-img">
+                            <h3>立冬</h3>
+                            <p>四季系列创意作品</p>
                         </div>
                     </div>
                 </div>
@@ -132,6 +127,17 @@
                 </div>
             </div>
         </footer>
+
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+            <div class="modal-controls">
+                <button id="zoomIn">放大</button>
+                <button id="zoomOut">缩小</button>
+                <a id="downloadLink" download>下载</a>
+            </div>
+        </div>
 
         <script src="scripts.js"></script>
     </body>
